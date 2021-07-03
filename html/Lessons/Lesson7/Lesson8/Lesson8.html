@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Многострочные текстовые поля</legend>
+            <p>
+            <textarea name="text" cols="50" rows="1">
+           </textarea>    
+            </p>
+            <p> Введите текст:<br>
+                <input type="text" name="text2" cols="50" rows="10">
+            </p>
+
+        </fieldset>
+        <fieldset>
+        <legend>Выпадающие списки</legend>
+        <p><select size="2" name="bool" multiple>
+            <optgroup label="Русская классика">
+             <option value="1">Война и мир</option>
+             <option value="2">Идиот</option>
+             <option value="3">Отцы и дети</option>
+            </optgroup>
+            </select>
+            </p>
+            <p>
+               <p> 
+                   <b>Выберите пункт:</b>
+                </p>
+                <select name="bool" multiple>
+                     <option value="1">Суп</option>
+                     <option value="2">Картошка</option>
+                     <option value="3">Каша</option>
+                    </select>
+
+                </p>
+            </fieldset>
+    
+        </form>
+
+        <form id="f1" action="mailto:poliak@tut.by" enctype="text/plain">
+            <p><input name="a"> 
+            </p>
+            <p><input type="submit"></p>
+            <input type="reset" value="Сбросить">
+           </form>
+         
+</body>
+</html>

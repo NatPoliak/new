@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>  Запись на курсы </h2>
+  <hr align="left" width="50%">
+ <form id="form1">
+ <p> 
+    <label> Имя:<br>
+      <input type="text" name="name" value="Алексей">
+    </label>
+</p>
+<p>
+   <label>Язык программирования:<br>
+     <input type="radio" name="lang">C++<br>
+     <input type="radio" name="lang">PHP<br>
+     <input type="radio" name="lang">Python<br>
+   </label>
+</p>
+  <p>
+    <label>
+      Дополнительная информация:  <br>
+      <textarea name="text" id="text" cols="30" rows="10" > Есть опыт программирования на С++</textarea>
+   </label>
+  </p>
+<p>
+    <label>
+        Секретное слово:<br>
+        <input type="password" name="pass" size="30" value="1111111">
+        </label>
+    </p>
+<p>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+</p>
+ </form>
+<form id="form2">
+    <fieldset style="width: 50%;">
+        <legend>Параметры автомобиля</legend>
+        <p> 
+            <label> Марка автомобиля:
+              <input type="text" name="avto">
+            </label>
+        </p>
+        <p> 
+            <label> Объем двигателя, см <sup>3</sup>:
+              <input type="text" name="ob" value="1900">
+            </label>
+        </p>
+        <p> 
+            <label> Область:
+              <select name="obl">
+                  <option name="1">Брестская</option>
+                  <option name="2">Минская</option>
+                  <option name="3">Витебская</option>
+
+                  </select>
+            </label>
+        </p>
+        <p>
+            <label>Тип КПП<br>
+              <input type="radio" name="tip">Автомат<br>
+              <input type="radio" name="tip">Механика<br>
+            </label>
+         </p>
+         <p>
+            <label>Двигатель<br>
+              <input type="checkbox" name="t1">Элекстро<br>
+              <input type="checkbox" name="t2">Дизель<br>
+              <input type="checkbox" name="t3">Бензин<br>
+              <input type="checkbox" name="t4">Пропан-бутан<br>
+              <input type="checkbox" name="t5">Метан<br>
+            </label>
+         </p>
+         <p>
+            <label>
+              Описание <br>
+              <textarea name="text" id="text1" cols="30" rows="10" ></textarea>
+           </label>
+          </p>
+          <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </p>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form name="1">
+        <fieldset >
+            <legend>Регестрационная форма пользователя</legend>
+
+<p>Имя:<input type="text">
+    </p>
+    <p>
+Укажите возраст:
+<select name="2" id="age">
+    <option name="11" value="10-15">10-15</option>
+        <option name="41" value="15-20">15-20</option>
+        <option name="21" value="20-25">20-25</option>
+        <option name="31" value="30-35">30-35</option>
+        <option name="41" value="Старше 40">Старше 40</option>
+    </select>
+    </p>
+    <p>
+        Укажите пол:
+        <label>Мужской:
+        <input type="radio" name="pol" value="мужской">
+        Женский:<input type="radio" name="pol" value="женский">
+        </label>
+    </p>
+    <p>
+       Страна проживания:
+        <select name="3" id="state">
+            <option name="111" value="10-15">Беларусь</option>
+                <option name="411" value="15-20">Российская Федерация</option>
+                <option name="211" value="20-25">Другое государство</option>
+            
+            </select>
+            </p>
+            <p>
+               Владение языками:
+                <label>Русский
+                <input type="checkbox" name="rus" value="rus" >
+            </label>
+            <label> Белорусский<input type="checkbox" name="bel" value="bel">
+            </label>
+            <label>Английский<input type="checkbox" name="ang" value="ang">
+            </label>
+               
+            </p>
+            <p>
+               Фото профиля: <input type="file" accept=".png .jpg">
+                </p>
+                <p>
+                    <label></label>
+                    Введите логин:<input type="text" maxlength="50" required>
+                </label>
+                </p>
+                  <p> 
+                    <label> Введите пароль:<input type="password" maxlength="30" required>
+                    </label>
+                  </p>
+                  <p> <label></label> Повторите пароль:<input type="password" maxlength="30" required>
+                  </label>
+                  </p>
+                    </p>
+        </fieldset>
+        <p>
+        <input type="reset" value="Сброс">
+        <input type="submit" value="Отправить">
+        </p>
+       
+<textarea cols="30" rows="10">
+    </textarea>
+    </form>
+    </div>
+        
+    
+</body>
+</html>

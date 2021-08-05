@@ -11,14 +11,14 @@ text-align: left;
     text-align: right;
 }
 .first{
-    text-decoration: underline;
+    text-decoration: underline dotted;
 }
 .second {
-    text-decoration: underline;
+    text-decoration: underline dashed;
 }
 .third{
-    text-decoration: underline;
+    text-decoration: underline wavy;
 }
 p:nth-of-type(2) span {
-    text-decoration: underline;
+    text-decoration: underline wavy;
 } 

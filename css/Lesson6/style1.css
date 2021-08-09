@@ -1,11 +1,20 @@
+TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+    text-align: left;
+    position: relative; 
+
+    }
 table
 {
+    border-collapse: collapse;
     border:2px solid black;
+    width: 800px;
+    margin: 10px auto;
 }
 .t2 {
     caption-side: bottom;
 empty-cells: hide;
 
 border: 1px solid black; 
-
 }

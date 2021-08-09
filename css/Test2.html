@@ -1,0 +1,134 @@
+<html><head>
+    <title>Konstantin Maskalenko</title>
+    <style>
+        body {
+      margin: 0;
+      background: #000; 
+    }
+    video { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+     background: url('MKA_4095.jpg') no-repeat;
+      background-size: cover;
+      transition: 1s opacity;
+    }
+    .stopfade { 
+       opacity: .5;
+    }
+    
+    #mka { 
+      font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+      font-weight:100; 
+      background: rgba(0,0,0,0.3);
+      color: white;
+      padding: 2rem;
+      width: 33%;
+      margin:2rem;
+      float: right;
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-top: 0;
+      letter-spacing: .3rem;
+    }
+    #mka button { 
+      display: block;
+      width: 80%;
+      padding: .4rem;
+      border: none; 
+      margin: 1rem auto; 
+      font-size: 1.3rem;
+      background: rgba(255,255,255,0.23);
+      color: #fff;
+      border-radius: 3px; 
+      cursor: pointer;
+      transition: .3s background;
+    }
+    #mka button:hover { 
+       background: rgba(0,0,0,0.5);
+    }
+    
+    a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      background:rgba(0,0,0,0.5);
+      padding: .5rem;
+      transition: .6s background; 
+    }
+    a:hover{
+      background:rgba(0,0,0,0.9);
+    }
+    @media screen and (max-width: 500px) { 
+      div{width:70%;} 
+    }
+    @media screen and (max-device-width: 800px) {
+    
+    }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    
+    <body>
+    
+    <video poster="/css/MKA_4095.jpg" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+      <!-- 
+    - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+    WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    <source src="https://www.youtube.com/embed/Ax5YFnzhZL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    
+    </video>
+    <div id="mka">
+    <h1>Wicklow</h1>
+    <p>filmed by K.Maskalenko</p>
+    <p><a href="https://www.wicklowmountainsnationalpark.ie/">Wicklow Mountains National Park</a></p>
+    <p>Wicklow Mountains National Park is situated just south of Dublin. Covering 20,483 hectares, Wicklow Mountains National Park has the distinction of being the largest of Ireland's six National Parks. It is also the only one located in the east of the country.</p>
+    <p>The National Park extends over much of the Wicklow mountains. Upland blanket bog and heath cover the upland slopes and rounded peaks. The wide open vistas are interrupted only by forestry plantations and narrow winding mountain roads. Fast-flowing streams descend into the deep lakes of the wooded valleys and continue their course into the surrounding lowlands.</p>
+    <button>Pause</button>
+    </div>
+    <script>
+        var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#mka button");
+    
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+    }
+    
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+    
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+    }); 
+    
+    
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+    </script>
+    
+    
+    </body></html>

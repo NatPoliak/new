@@ -1,0 +1,11 @@
+table
+{
+    border:2px solid black;
+}
+.t2 {
+    caption-side: bottom;
+empty-cells: hide;
+
+border: 1px solid black; 
+
+}

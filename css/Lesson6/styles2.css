@@ -1,66 +1,4 @@
-<<<<<<< HEAD
-table
-{
-    
-    border-collapse: collapse;
-    overflow: hidden;
 
-}
-TD, TH {
-    padding: 3px; /* Поля вокруг содержимого таблицы */
-    border: 1px solid black; /* Параметры рамки */
-    text-align: left;
-    position: relative; 
-
-    }
-td:nth-of-type(3) {
-        background-color:#D1D0FB;
-         color:white;
-         font-weight:bold;
-     }
-     tr:nth-of-type(7) {
-        background-color:#D1D0FB;
-         color:white;
-         font-weight:bold;
-     }
-     
-     table td:nth-of-type(3) tr:nth-of-type(1) {
-        background-color:#3B3B93;
-         color:white;
-         font-weight:bold;
-     }
-
-     th {
-        background-color:#7F7FA4;
-             color:white;
-             font-weight:bold;
-    }
-    thead {
-        background-color:#3B3B93;
-         color:white;
-         font-weight:bold;
-     }
-  tr:hover td:hover ::after {
-         background-color: rgba(rgb(148, 37, 37), green, blue, alpha);
-         content: "";
-         position: absolute;
-         height: 2000vh;
-         left: 0;
-         top: -1000vh;
-         width: 100%;
-         z-index: -1;
-       
-
-    }
-
-    
-/*tr:hover
-{
-     background-color:#7e4ff7;
-      color:white;
-}*/
-    
-=======
 a:active {
     display: block; Отображать как блок
     border: 4px solid rebeccapurple;
@@ -69,4 +7,4 @@ padding: 10px; Поля (внутренние отступы)
 background: linear-gradient(to top, #4fbd24, #41ec03);
 
 }
->>>>>>> 3eec9b42f0eb836f7d7fadb65100aec9a01896e0
+

@@ -1,10 +1,28 @@
 
-a:active {
-    display: block; Отображать как блок
-    border: 4px solid rebeccapurple;
-margin: 20px;  Внешние отступы
-padding: 10px; Поля (внутренние отступы)
-background: linear-gradient(to top, #4fbd24, #41ec03);
 
+
+a {
+    display: inline-block;
+    box-shadow: 0 0 3px #4fbd24; 
+    border: 1px solid rgb(255, 255, 255); 
+    outline: 5px solid #4fbd24;
+    outline-color: #4fbd24;
+    margin: 30px;  
+    padding: 10px; 
+    background: linear-gradient(to top, #4fbd24, #41ec03);
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: x-large;
 }
+   a:hover {
+   
+    background: linear-gradient(to top, #f9a80c, #fbc157);
+    outline: 5px solid #f9a80c;
+    padding:10px;
+    color: rgb(255, 255, 255);
+   }
+   a:active {
+    outline: 5px solid #f9cd66;
+    background: linear-gradient(to top, #f9cd66, #fae069);
+   }
 

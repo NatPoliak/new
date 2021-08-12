@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 table
 {
     
@@ -13,6 +12,18 @@ TD, TH {
     position: relative; 
 
     }
+    td:hover::after {
+        background-color: rgba(rgb(148, 37, 37), green, blue, alpha);
+        content: "";
+        position: absolute;
+        height: 2000vh;
+        left: 0;
+        top: -1000vh;
+        width: 100%;
+        z-index: -1;
+
+   }
+
 td:nth-of-type(3) {
         background-color:#D1D0FB;
          color:white;
@@ -40,18 +51,7 @@ td:nth-of-type(3) {
          color:white;
          font-weight:bold;
      }
-  tr:hover td:hover ::after {
-         background-color: rgba(rgb(148, 37, 37), green, blue, alpha);
-         content: "";
-         position: absolute;
-         height: 2000vh;
-         left: 0;
-         top: -1000vh;
-         width: 100%;
-         z-index: -1;
-       
-
-    }
+ 
 
     
 /*tr:hover
@@ -60,13 +60,3 @@ td:nth-of-type(3) {
       color:white;
 }*/
     
-=======
-a:active {
-    display: block; Отображать как блок
-    border: 4px solid rebeccapurple;
-margin: 20px;  Внешние отступы
-padding: 10px; Поля (внутренние отступы)
-background: linear-gradient(to top, #4fbd24, #41ec03);
-
-}
->>>>>>> 3eec9b42f0eb836f7d7fadb65100aec9a01896e0

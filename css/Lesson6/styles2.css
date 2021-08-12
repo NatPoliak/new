@@ -39,7 +39,7 @@ td:nth-of-type(3) {
          color:white;
          font-weight:bold;
      }
-  tr:hover ::after {
+  tr:hover td:hover ::after {
          background-color: rgba(rgb(148, 37, 37), green, blue, alpha);
          content: "";
          position: absolute;
@@ -48,6 +48,7 @@ td:nth-of-type(3) {
          top: -1000vh;
          width: 100%;
          z-index: -1;
+       
 
     }
 

@@ -34,7 +34,7 @@ a {
     
 hr {
    color: #ffbb00;
-    width: 95%;
+    width: 98%;
     border: none; 
     background-color: #ffbb00; 
      height: 1px;
@@ -43,13 +43,13 @@ hr {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-left: 3%;
+        padding-left: 1%;
         justify-content: flex-start;
         padding-top: 10px;
         
 }
 .col1 {
-    width: 140px;
+    width: 137px;
     display: flex;
         flex-wrap: wrap;
         margin-right: 70px;

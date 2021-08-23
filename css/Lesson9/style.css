@@ -1,15 +1,20 @@
 .d1 {
-    background-color: red;
+    background-color: rgb(240, 255, 204);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    padding: 20px 40px;
+
 }
 .but {
     background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 
+    flex: 0 1 400px;
+    padding: 20px 0;
+    box-shadow:5px 5px 1px brown;
+    border-radius: 11px;
 }

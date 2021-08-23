@@ -72,9 +72,9 @@ hr {
    
 }
 div .col2 :nth-of-type(2) {
-    background-color: rgb(58, 107, 9);
-    padding: 3px;
-    color: #f2f5f9;
+    background-color: #469924;
+    padding: 4px;
+    color: #e6e6e6;
 }
 div .col2 :nth-child(1) {
     margin-top: -48px;

@@ -1,0 +1,10 @@
+.lending {
+    max-width: 1440px;
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+    margin: 0 auto;
+}
+body {
+    background-color: #bbbbbb;
+}
